@@ -10,3 +10,9 @@
 
     // Alert
     document.getElementById('alert').style.display = 'none';
+
+    //funstion -> 긴코드를 깔끔하게 한 단어로 축약
+    function 알림창열기(){
+        document.getElementById('alert').style.display = 'block';
+    }
+    
