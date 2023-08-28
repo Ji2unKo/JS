@@ -9,36 +9,45 @@
 
 
     // Alert
-    document.getElementById('alert').style.display = 'none';
+    // document.getElementById('alert').style.display = 'none';
+
+    
+    //EventListener 
+    // 이 요소가 클릭 되면 이코드를 실행해주세요
+    document.getElementById('close').addEventListener('click', function(){
+        document.getElementById('alert').style.display ='none';
+    });
+
+    function 알림창1열기(구멍){
+        // class 다 찾아주니깐 [0~4] 번째 쓰면 됨
+        // document.getElementsByClassName('alert-box')[0]
+        document.getElementById('title').innerHTML = 구멍;
+        document.getElementById('alert').style.display ='block';
+    }
+
+
+    //function 알림창2열기(){
+        // class 다 찾아주니깐 [0~4] 번째 쓰면 됨
+        // document.getElementsByClassName('alert-box')[0]
+      //  document.getElementById('title').innerHTML = '비밀번호를입력하세요';
+       // document.getElementById('alert').style.display ='block';
+ //   }
+
+ 
 
     //funstion -> 긴코드를 깔끔하게 한 단어로 축약
     // 파라미터라는 문법을 이용해서 알림창열기()함수를 업글한거임
     // 파라미너의 장점 : 함수 하나로 다양한기능 만들기 가능
-    function 알림창열기(구멍){
-        document.getElementById('alert').style.display = 구멍;
-    }
+    // function 알림창열기(구멍){
+        //document.getElementById('alert').style.display = 구멍;
+   // }
 
     // chobo : 함수 개많이 만들어 놓음
     // gosu : 비슷한 함수들은 여러개 만들 필요 없
 
-    알림창열기('block'); 
-    알림창열기('none'); 
+  //  알림창열기('block'); 
+   //알림창열기('none'); 
 
     // function 알림창닫기(){
     //     document.getElementById('alert').style.display = 'none';
     // }  
-
-    function plus(구멍){
-        2 + 구멍
-    }
-    
-    function plus2(){
-        2 + 2
-    }
-    
-    function plus3(){
-        2 + 3
-    }
-
-    // plus() 실행하는 1번, 2번, 3번 
-    plus(1)
