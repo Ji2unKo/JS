@@ -15,4 +15,7 @@
     function 알림창열기(){
         document.getElementById('alert').style.display = 'block';
     }
-    
+
+    function 알림창닫기(){
+        document.getElementById('alert').style.display = 'none';
+    }  
