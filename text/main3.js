@@ -73,3 +73,4 @@ console.log(total);
 // 내부로 전달되는 파라미터가 하나면 괄호는 생략가능
 const abc = txt => console.log(txt);
 abc("hello");
+d
