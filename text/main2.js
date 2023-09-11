@@ -58,3 +58,8 @@ while(cars[i]){
   i++;
 }
 
+// 이터러블 객체 (문자의 반복처리)
+const txt = "HELLO";
+for(let letter of txt){
+  console.log(letter)
+}
