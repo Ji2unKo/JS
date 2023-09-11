@@ -73,4 +73,58 @@ console.log(total);
 // 내부로 전달되는 파라미터가 하나면 괄호는 생략가능
 const abc = txt => console.log(txt);
 abc("hello");
-d
+
+// 조건문 
+// -> 특정조건을 걸어서 해당 조건의 참, 거짓 유무에 따라 분기를 생성
+// if(조건식1){
+// - 조건식1이 참이면 해당코드 블록을 실행
+// - 거짓이면 해당 코드 블록을 무시하고 다음 조건식으로 넘어감
+//} else if(조건식2){
+// - 조건식2가 참이면 해당 코드 블록을 실행
+// - 거짓이면 해당 코드 블록을 무시하고 다음 조건식으로 넘어감
+//} else {위의 모든 조건식이 거짓이면 이곳의 코드를 실행하고 종료}
+
+function plus3 (num1, num2){
+  if(num1 === undefined || num2 === undefined){
+    console.log.console.error("두개의 인수값을 모두 넣어주세요.");
+  }
+  if(typeof num1 == "number" || typeof num2 !== "number"){
+    console.error("두개의 인수값을 모두 숫자로 넣어주세요")
+  }
+  const result = num1+num2;
+  console.log(result);
+}
+
+plus3(2,"3");
+
+// 조건문 Switch : 여러개의 코드블록중에서 하나를 선택해야 될 때 사용
+// switch(표현식) {
+// case A : 실행할 코드 블록 break; 
+// case B : 실행할 코드 블록 break; 
+// defaut : 실행할 코드 블록 }
+
+// 일 -0 , 월 -1
+switch(new Date().getDay()){
+  case 0:
+   console.log("Sunday");
+   break;
+   case 1:
+   console.log("Monday");
+   break;
+   case 2:
+   console.log("Tuesday");
+   break;
+   case 3:
+   console.log("Wednesday");
+   break;
+   case 4:
+   console.log("Thursday");
+   break;
+   case 5:
+   console.log("Friday");
+   break;
+   case 6:
+   console.log("Saturday");
+   break;
+};
+
