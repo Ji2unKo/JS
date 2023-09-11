@@ -59,20 +59,20 @@ console.log(title);
 // 대입연산자 : 특정값을 대입하기 위한 연산 (=, +=, -=, *=, /=)
 // 비교연산자 : 두개 이상의 값을 서로 비교하기 위한 연산(결과값 반환, true, false)
 
-let num = 5 ;
-num = num % 2;
-console.log(num);
+//let num = 5 ;
+//num = num % 2;
+// console.log(num);
 
-let  num1 = 2;
+// let  num1 = 2;
 // num1 = num1 +2;
 // num1 += 1;
-num++;
-console.log(num1)
+// num++;
+// console.log(num1)
 
 // plus++ (후위연산자 : 초기변수값을 먼저 사용하고 그 다음에 값을 증가)
-let plus = 0;
-console.log(plus);
-plus = plus+1
+// let plus = 0;
+//console.log(plus);
+// plus = plus+1
 
 // ++plus( 전위연산자)
 let plus2 = 0;
@@ -99,3 +99,10 @@ console.log(result2)
 // 5. null (Object) : 명시적으로 (일부러) 특정 변수의 값을 비워둘 때
 // 6. 배열 array : (Object) 연관된 값들을 그룹으로 묶어서 관리하는 자료 형태
 // 7. 객체 : (Object) 데이터를 key라는 인덱싱을 통해 자료를 구조적으로 묶어놓은 형태
+
+// 형변환 : 특정조건이 부합되면 자료형이 강제로 변환되는 현상
+let num = "2";  //문자
+let num2 = 3;  // 숫자
+let num3 = 5;  // 숫자
+console.log(num+num2+num3)// 235 문자
+console.log(num3+num2+num)// 82 문자
