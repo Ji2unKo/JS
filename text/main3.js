@@ -45,3 +45,23 @@ minus();
   const num2 =3;
   console.log(num1+num2)
 })();
+
+// 함수의 매개변수, 인수, 리턴값
+// 함수 매개변수(parameter)
+// - 함수 외부에서 함수 내부로 특정값을 전달하기 위한 통로 이름
+// 인수 (argument)
+// - 함수를 호출할때 파라미터를 통해서 전달되는 값
+// 반환값(return)
+// 1. 함수 내부에서 만들어진 값을 함수 호출시 외부로 반환
+// 2. 함수구문 실행도중 특정시점에서 강제로 코드를 실행중단이 될 때
+
+function plus2(num1, num2){
+ // const num1 = 2;
+ // const num2 = 3;
+  const result = num1+num2;
+  console.log(result)
+  return result;
+}
+
+const total = plus2(3.123,5.456);
+console.log(total);
