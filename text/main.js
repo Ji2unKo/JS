@@ -114,3 +114,21 @@ console.log(colors[2])
 
 colors[0] = "hotpink";
 console.log(colors);
+
+// 객체 : Object
+// 데이터를 property라는 인덱싱을 통해 구조적으로 묶어놓은 형태
+
+let student1 = {
+  name : "고지은",
+  age : 33,
+  isFemale : false,
+  address : "Jeju"
+}
+
+console.log(student1["name"]);
+console.log(student1["age"]);
+
+console.log(student1.isFemale);
+console.log(student1.address);
+
+student1.address = "Daejeon"
