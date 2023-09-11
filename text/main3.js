@@ -56,12 +56,20 @@ minus();
 // 2. 함수구문 실행도중 특정시점에서 강제로 코드를 실행중단이 될 때
 
 function plus2(num1, num2){
- // const num1 = 2;
- // const num2 = 3;
-  const result = num1+num2;
-  console.log(result)
-  return result;
+//const num1 = 2;
+//const num2 = 3;
+const result = num1+num2;
+console.log(result)
+return result;
 }
 
 const total = plus2(3.123,5.456);
 console.log(total);
+
+
+// 화살표 함수 (Arrow function)
+// -> 기존의 익명함수를 좀더 쓰기 편하게 축약한 형태
+
+// 내부로 전달되는 파라미터가 하나면 괄호는 생략가능
+const abc = txt => console.log(txt);
+abc("hello");
