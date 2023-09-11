@@ -88,3 +88,14 @@ let result2 = (2 === "2") // 값은 같지만 숫자, 문자로 자료형이 달
 console.log(result2)
 // -> 개발을 정밀하기 위해서는 == 보다 === 쓰는게 여러모로 이득 ! 엄격한 비교 해줌
 
+// 자료형  (Data Type)
+// 원시형 자료 (Primitve type) : 특정 값이 메모리에 바로 저장 (값만 저장)
+// 1. 문자(String)
+// 2. 숫자 (Number)
+// 3. 논리형 (Boolean : true, false)
+// 4. undefined (undefined) : 변수를 선언하고 값을 할당하지 않으면 undefined가 대신 저장 (에러상황)
+
+// 참조형 자료 (reference type) : 값이 위치하고 있는 참조 주소값만 메모리에 저장 (관련내장함수까지 같이 참조)
+// 5. null (Object) : 명시적으로 (일부러) 특정 변수의 값을 비워둘 때
+// 6. 배열 array : (Object) 연관된 값들을 그룹으로 묶어서 관리하는 자료 형태
+// 7. 객체 : (Object) 데이터를 key라는 인덱싱을 통해 자료를 구조적으로 묶어놓은 형태
