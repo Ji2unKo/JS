@@ -37,3 +37,11 @@ const minus = function(){
 
 minus();
 
+// 즉시실행 함수
+// 사용하는 이유 -> 즉시 실행 함수 안쪽의 값들을 캡슐화
+
+(function(){
+  const num1 =2;
+  const num2 =3;
+  console.log(num1+num2)
+})();
