@@ -106,3 +106,11 @@ let num2 = 3;  // 숫자
 let num3 = 5;  // 숫자
 console.log(num+num2+num3)// 235 문자
 console.log(num3+num2+num)// 82 문자
+
+// 배열 : Array
+//   연관된 값들을 하나의 그룹으로 묶어서 나열한 자료구조
+const colors = ["red", "green", "blue"];
+console.log(colors[2])
+
+colors[0] = "hotpink";
+console.log(colors);
