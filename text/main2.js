@@ -43,3 +43,18 @@ const student1 = {
 for(let key in student1){
   console.log(student1[key])
 }
+
+// while -> 조건을 집어넣고 중괄호에 코드를 실행하는 것
+// 거의 사용할일은 없음 for문을 사용하는게 효율적 
+const cars = ["BMW", "VOLVO", "HYUNDAI"];
+ 
+for(let i=0; i<cars.length; i++){
+  console.log(cars[i])
+}
+
+let i=0; // 초기값
+while(cars[i]){
+  console.log(cars[i]);
+  i++;
+}
+
