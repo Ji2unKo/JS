@@ -132,3 +132,22 @@ console.log(student1.isFemale);
 console.log(student1.address);
 
 student1.address = "Daejeon"
+
+// 자료형 검사
+let text = "Hello";
+let num5 = 1;
+let boolean = true;
+let blank = null;
+let colors2 = ["red", "green", "pink"];
+let student2 = {
+  name : "고지은",
+  age : 33,
+  isFemale : false,
+  address : "Jeju"
+}
+
+console.log(typeof text)
+console.log(typeof num5)
+console.log(typeof boolean)
+console.log(typeof colors2)
+console.log(typeof student2)
