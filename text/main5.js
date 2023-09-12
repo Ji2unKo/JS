@@ -35,3 +35,21 @@ const colors3 = ["hotpink", "orang"]
 // const result3 = colors.concat(colors2, colors3);
 const result3 = colors.slice(1)
 console.log(result3)
+
+// 배열 내장함수2
+// sort() : 알파벳순으로 요소 정렬
+// reverse() : 역순으로 요소 정렬
+// sort((a,b)=> {return a-b}) : 올림차순으로 정렬
+// sort((a,b)=> {return b-a}) : 내림차순으로 정렬
+// sort((a,b)=> {return a-b})[0] : 최소값 반환
+// sort((a,b)=> {return b-a})[0] : 최대값 반환
+
+const names = ["David", "Andy", "Tom", "Michael"];
+names.sort;
+names.reverse();
+console.log(names);
+
+const nums = [5,3,20,50,30];
+nums.sort((a,b)=>{return b-a})
+console.log(nums)
+
