@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전개 연산자</title>
+</head>
+<body>
+  <script>
+    let arr = ["red", "green", "blue"];
+    let arr2 = ["pink",...arr]
+    console.log(arr2)
+
+    let hobby = ["game", "sports", "reading"];
+    let hobby2 = ["dance", "climbing", "skating"];
+    let newHobby = [...hobby, ...hobby2];
+    console.log(newHobby);
+
+    let defaulte = {
+      color : "gray",
+      hobby : "nap",
+      address : "nowhere"
+    }
+
+    let customs = {
+      color : "hotpink",
+      address : "seoul"
+    }
+
+    // 동일한 키값이 객체에 하나로 들어갈수 없으니깐 나중에 쓴 객체값이 덮어쓰기함
+    let newObj = {...defaulte, ...customs}
+    console.log(newObj)
+  </script>
+</body>
+</html>
