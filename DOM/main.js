@@ -17,6 +17,7 @@ DOM (Document Object Model) 문서 객체 모델
 
 */
 
+/*
 const wrap = document.querySelector('#wrap');
 const children = wrap.children;
 console.log(children[1]);
@@ -29,6 +30,25 @@ console.log(nextEl);
 const a = box2.querySelector('a');
 const parentEl = a.parentElement;
 const grandParentEl = a.closest('#wrap');
-console.log(grandParentEl);
+console.log(grandParentEl);\
+
+/*
+ Event
+ : 무언가 일어나는 행위, 액션
+ -- 사용자가 발생시키는 이벤트
+    (clickm mouseover, mousemove, mousewheel, scroll)
+ -- 시스템이 발생시키는 이벤트
+    (load, error)
+
+    이벤트 연결방법
+    DOM.onclick = ()=>{}
+    DOM.addEventListener('이벤트명', ()=>{})
+*/
+
+const a = document.querySelector('a');
+
+a.onclick = ()=>{
+  window
+}
 
 
