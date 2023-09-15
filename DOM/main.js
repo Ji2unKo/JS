@@ -46,9 +46,22 @@ console.log(grandParentEl);\
 */
 
 const a = document.querySelector('a');
+console.dir(a);
 
+/*
 a.onclick = ()=>{
-  window
+  alert('You clicked!!');
 }
 
+a.onclick = ()=>{
+   alert('You clicked again!!')
+}
+*/
 
+a.addEventListener('click',()=>{
+   console.log('You clicked!!')
+})
+
+a.addEventListener('click', ()=>{
+   console.log('You clicked again!!')
+})
