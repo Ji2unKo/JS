@@ -16,3 +16,30 @@ window.addEventListener("scroll", e => {
   console.log(`x축 : ${window.scrollX}`)
 })
 
+const version = navigator.userAgent;
+console.log(version);
+
+const isWhale = /whale/i.test(version);
+const isEdg = /edg/i.test(version);
+const isIE = /trident/i.test(version);
+
+
+if(isWhale){
+  console.log("Whale 브라우저로 접속했습니다.");
+  document.querySelector("body").style.backgroundColor = "lightgreen"
+;}
+
+if(isEdg){
+  console.log("Edge 브라우저로 접속했습니다.");
+  document.querySelector("body").style.backgroundColor = "lightgblue"
+}
+
+if(isIE){
+  document.querySelector("body").style.backgroundColor = "lightorange"
+  console.log("IE 브라우저로 접속했습니다.");
+}
+
+if(!isWhale && !isEdg && !isIE){
+  document.querySelector("body").style.backgroundColor = "lightpink"
+  console.log("Chrome 브라우저로 접속했습니다.");
+}
