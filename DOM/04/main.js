@@ -18,6 +18,12 @@ for(let btn of btns){
 
 btns.forEach((btn, index)=>{
   btn.addEventListener("click", e=>{
-    console.log(index);
+    let isOn = e.currentTarget.classList.contains('on');
+    if(isOn){
+      return;
+    }
+    //console.log(index);
+    for(let item of btns) item.classList.remove('on');
+    btns[index].classList.add('on');
   })
 })
