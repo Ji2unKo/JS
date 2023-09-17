@@ -35,7 +35,7 @@ if(isEdg){
 }
 
 if(isIE){
-  document.querySelector("body").style.backgroundColor = "lightorange"
+  document.querySelector("body").style.backgroundColor = "light"
   console.log("IE 브라우저로 접속했습니다.");
 }
 
