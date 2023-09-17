@@ -17,6 +17,8 @@ DOM (Document Object Model) 문서 객체 모델
 
 */
 
+// const e = require("express");
+
 /*
 const wrap = document.querySelector('#wrap');
 const children = wrap.children;
@@ -46,7 +48,7 @@ console.log(grandParentEl);\
 */
 
 const a = document.querySelector('a');
-console.dir(a);
+// console.dir(a);
 
 /*
 a.onclick = ()=>{
@@ -58,10 +60,34 @@ a.onclick = ()=>{
 }
 */
 
-a.addEventListener('click',()=>{
+a.addEventListener('click',e =>{
+   e.preventDefault();
    console.log('You clicked!!')
 })
 
-a.addEventListener('click', ()=>{
-   console.log('You clicked again!!')
+//a.addEventListener('click', ()=>{
+  // console.log('You clicked again!!')
+//})
+
+// 메서드 : 함수이긴 한데 어떤 특정객체의 종속의 되어있는 함수
+
+const box = document.querySelector('.box')
+
+box.addEventListener('mousemove', e => {
+   console.log(e);
+   console.log(`현재 마우스 x축 위치 : ${e.pageX}`);
+   console.log(`현재 마우스 y축 위치 : ${e.pageY}`);
+   console.log(`offsetX: ${e.offsetX}`);
+   console.log(`offsetY: ${e.offsety}`);
 })
+
+﻿
+window.addEventListener('mousewheel', e=> {
+   console.log(e.deltaY)
+
+   if(e.deltaY > 0)console.log("wheel down")
+   if(e.deltaY < 0)console.log("wheel up")
+})
+
+
+﻿

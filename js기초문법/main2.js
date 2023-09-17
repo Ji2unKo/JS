@@ -63,3 +63,4 @@ const txt = "HELLO";
 for(let letter of txt){
   console.log(letter)
 }
+';'
