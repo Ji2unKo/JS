@@ -19,10 +19,10 @@
 const btns = document.querySelectorAll("ul li");
 for(var i=0; i<btns.length; i++){
   ((index)=>{
-    btns[index].addEventListener("click", ()=>{
-      console.log(index);
+    btns[i].addEventListener("click", ()=>{
+      console.log(i);
   })
-  })(i)
+  })
 }
 
 /*
