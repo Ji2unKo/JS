@@ -18,7 +18,7 @@ function changBg(selector){
 }
 */
 
-
+// es6 객체 지향
 class Box {
   constructor(selector){
     this.el = document.querySelector(selector); 
@@ -39,3 +39,16 @@ new Box('.box3');
 프로토타입 (prototype) : 공용 저장 창고 <생성장 함수를 통해 복사물>
 */
 
+/* es5 객체 지향
+function Box(selector){
+  this.el = document.querySelector(selector);
+  this.el.addEventListenr('click', function(){
+    this.changeBg(this.el);
+  }.bind(this))
+}
+Box.prototype.changeBg = function(selector){
+  selector.style.backgroundColor = 'hotpink';
+}
+
+new Box('.box1');
+*/
